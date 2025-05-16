@@ -55,6 +55,11 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
 
+        // Ini buat waktu tulisan LUPA PASSWORD diklik pindah ke halaman Forgot Password
+        binding.btnGoLupaPassword.setOnClickListener(){
+            findNavController().navigate(R.id.action_loginFragment_to_forgotPasswordFragment)
+        }
+
         return binding.root
     }
 }
