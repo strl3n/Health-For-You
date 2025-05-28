@@ -13,7 +13,7 @@ import com.istts.healthforyou.databinding.ActivityRegisterBinding
 class RegisterActivity : AppCompatActivity() {
     lateinit var binding: ActivityRegisterBinding
     private lateinit var navController: NavController
-
+//as8yd9IUAHSIUHDIAUHSDIHAIHSIUDHIHIAHCBXZJBCBUWEUIIWD
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_register)
