@@ -13,6 +13,9 @@
         android:theme="@style/Base.Theme.HealthForYou"
         tools:targetApi="31">
         <activity
+            android:name=".SeminarActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity

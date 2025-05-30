@@ -30,7 +30,7 @@ class MainFragment : Fragment() {
         }
 
         binding.btnSeminarKesehatan.setOnClickListener(){
-            Toast.makeText(requireContext(), "Seminar Kesehatan", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_mainFragment_to_seminarListFragment)
         }
 
         binding.btnKonsultasi.setOnClickListener(){

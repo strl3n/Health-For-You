@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_mainFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_seminarListFragment"
+            app:destination="@id/seminarListFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.istts.healthforyou.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/seminarListFragment"
+        android:name="com.istts.healthforyou.SeminarListFragment"
+        android:label="fragment_seminar_list"
+        tools:layout="@layout/fragment_seminar_list" />
 </navigation>

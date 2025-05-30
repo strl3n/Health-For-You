@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_seminar"
+    app:startDestination="@id/seminarListFragment2">
+
+    <fragment
+        android:id="@+id/seminarAddFragment"
+        android:name="com.istts.healthforyou.SeminarAddFragment"
+        android:label="fragment_seminar_add"
+        tools:layout="@layout/fragment_seminar_add" />
+    <fragment
+        android:id="@+id/seminarDetailFragment"
+        android:name="com.istts.healthforyou.SeminarDetailFragment"
+        android:label="fragment_seminar_detail"
+        tools:layout="@layout/fragment_seminar_detail" />
+    <fragment
+        android:id="@+id/seminarListFragment2"
+        android:name="com.istts.healthforyou.SeminarListFragment"
+        android:label="fragment_seminar_list"
+        tools:layout="@layout/fragment_seminar_list" >
+        <action
+            android:id="@+id/action_seminarListFragment2_to_seminarAddFragment"
+            app:destination="@id/seminarAddFragment" />
+        <action
+            android:id="@+id/action_seminarListFragment2_to_seminarDetailFragment"
+            app:destination="@id/seminarDetailFragment" />
+    </fragment>
+</navigation>
